@@ -17,7 +17,7 @@ class baseDatos
 		# code...
 	}*/
 
-	function inicializa($serv="us-cdbr-east-05.cleardb.net",$user="badf95cbb591fc",$puser="6ade9277",$bd="nutricion"){ #Todo elemento de información dentro de un método es LOCAL (Pertenece AL MÉTODO). Por ello debe usarse this, para indicar que se hace referencia a un atributo DE LA CLASE 
+	function inicializa($serv="us-cdbr-east-05.cleardb.net",$user="badf95cbb591fc",$puser="6ade9277",$bd="heroku_1974968533e0d0f"){ #Todo elemento de información dentro de un método es LOCAL (Pertenece AL MÉTODO). Por ello debe usarse this, para indicar que se hace referencia a un atributo DE LA CLASE 
 		$this->cone=mysqli_connect($serv,$user,$puser,$bd);
 		if ($this->cone==null) {
 			exit;
